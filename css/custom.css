@@ -1,0 +1,19 @@
+.skilltags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 5px;
+}
+
+.skilltag {
+  border-top: 1px solid #4A89DC;
+  border-left: 1px solid #4A89DC;
+  border-bottom: 1px solid #E6E9ED;
+  border-right: 1px solid #E6E9ED;
+  padding: 1px 5px;
+  margin: 2px 5px;
+  min-width: 50px;
+  text-align: center;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}

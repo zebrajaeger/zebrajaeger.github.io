@@ -1,0 +1,29 @@
+<div class="work-experience-section px-3 px-lg-4">
+  <h2 class="h3 mb-4">Berufserfahrung</h2>
+  <div class="timeline">
+    {% for beruf in site.data.lebenslauf.beruf %}
+      {% for projekt in beruf.projekte %}
+      <div class="timeline-card timeline-card-primary card shadow-sm">
+        <div class="card-body">
+          <div class="h5 mb-1">
+            {% for position in projekt.position %}
+             {{ position }}<br>
+            {% endfor %}
+            <span class="text-muted h6">bei {{ beruf.name }} / {{ projekt.name }}</span></div>
+          <div class="text-muted text-small mb-2">{{projekt.zeit.von}} - {{projekt.zeit.bis}}</div>
+          <div>
+            {% for beschreibung in projekt.beschreibung %}
+             {{ beschreibung }}<br>
+            {% endfor %}
+          </div>
+          <div class="skilltags">
+            {% for technologie in projekt.technologie %}
+            <span class="skilltag">{{technologie}}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>

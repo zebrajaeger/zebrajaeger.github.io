@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Right Resume</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+  </noscript>
+  <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+  <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+  <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
+  <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
+    </style>
+  </noscript>
+</head>
+<body id="top">
+{%- include header.html -%}
+<div class="page-content">
+  <div class="container">
+    <div class="cover shadow-lg bg-white">
+<!--      {%- include cover.html -%}-->
+      {%- include about.html -%}
+      <hr class="d-print-none"/>
+<!--            {%- include skills.html -%}-->
+<!--            <hr class="d-print-none"/>-->
+            {%- include experience.html -%}
+            <hr class="d-print-none"/>
+            <div class="page-break"></div>
+            {%- include ausbildung.html -%}
+            <hr class="d-print-none"/>
+            {%- include schule.html -%}
+<!--            <hr class="d-print-none"/>-->
+<!--            {%- include contact.html -%}-->
+    </div>
+  </div>
+</div>
+{%- include footer.html -%}
+<!--<script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>-->
+<!--<script src="scripts/aos.js?ver=1.2.0"></script>-->
+<!--<script src="scripts/main.js?ver=1.2.0"></script>-->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<ul class="nav justify-content-center">
+
+
+  {% if site.data.lebenslauf.profile.github %}
+  <li class="nav-item"><a class="nav-link"
+                          href="{{site.data.lebenslauf.profile.github.url}}"
+                          title="Github">
+    <i class="fab fa-github"></i>
+    <span class="menu-title sr-only">Github</span></a>
+  </li>
+  {% endif %}
+
+  {% if site.data.lebenslauf.profile.linkedin %}
+  <li class="nav-item"><a class="nav-link"
+                          href="{{site.data.lebenslauf.profile.linkedin.url}}"
+                          title="Linkedin">
+    <i class="fab fa-linkedin"></i>
+    <span class="menu-title sr-only">Linkedin</span></a>
+  </li>
+  {% endif %}
+
+  {% if site.data.lebenslauf.profile.instagram %}
+  <li class="nav-item"><a class="nav-link"
+                          href="{{site.data.lebenslauf.profile.instagram.url}}"
+                          title="Instagram">
+    <i class="fab fa-instagram"></i>
+    <span class="menu-title sr-only">Instagram</span></a>
+  </li>
+  {% endif %}
+
+  {% if site.data.lebenslauf.profile.facebook %}
+  <li class="nav-item"><a class="nav-link"
+                          href="{{site.data.lebenslauf.profile.facebook.url}}"
+                          title="Facebook">
+    <i class="fab fa-facebook"></i>
+    <span class="menu-title sr-only">Facebook</span></a>
+  </li>
+  {% endif %}
+
+  {% if site.data.lebenslauf.profile.twitter %}
+  <li class="nav-item">
+    <a class="nav-link" href="{{site.data.lebenslauf.profile.twitter.url}}"
+       title="Twitter">
+      <i class="fab fa-twitter"></i>
+      <span class="menu-title sr-only">Twitter</span>
+    </a>
+  </li>
+  {% endif %}
+</ul>
