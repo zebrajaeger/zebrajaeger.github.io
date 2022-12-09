@@ -1,2 +1,2 @@
-bundle exec jekyll serve --livereload  --incremental
+start bundle exec jekyll serve --livereload
 
