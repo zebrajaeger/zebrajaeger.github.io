@@ -16,3 +16,4 @@ exclude:
     - .idea/
     - Gemfile
     - Gemfile.lock
+    - build.js

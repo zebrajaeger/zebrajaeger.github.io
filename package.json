@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d _site"
+    "deploy": "gh-pages -d _site",
+    "pdf": "node build.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/zebrajaeger/zebrajaeger.github.io#readme",
   "dependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "puppeteer": "^19.4.0"
   }
 }
